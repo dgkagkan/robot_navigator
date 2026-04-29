@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
+        <arg name="use_sim_time" value="True"/>
+        <arg name="map" value="$(env HOME)/maps/cubes.yaml"/>
+        <arg name="params_file" value="$(env HOME)/nav2_params_custom.yaml"/>
+    </include>
+
+    <node pkg="nav_bridge_py" exec="nav2_test"/>
+    <node pkg="rclcpp_components" exec="component_container" name="my_container"/>
+        <load_composable_node target="my_container">
+            <composable_node pkg="robot_controller_cpp" plugin="lifecycle_node_manager_cpp::LifecycleNodeManager" name="manager_node" >
+                <param name="managed_node_names" value="['turtle_controller']"/>
+            </composable_node>
+        </load_composable_node>
+        <node pkg="rclcpp_components" exec="component_container_mt" name="my_container_mt"/>
+        <load_composable_node target="my_container_mt" >
+            <composable_node pkg="robot_controller_cpp" plugin="turtle_controller_cpp::TurtleControllerNode" name="turtle_controller" />
+        </load_composable_node>
+</launch>

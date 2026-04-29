@@ -1,0 +1,16 @@
+{
+    "ROS2.distro": "jazzy",
+    "python.autoComplete.extraPaths": [
+        "/home/dimitris-gkagkanakis/robotic_arm_ws/install/robotic_arm_interfaces/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/build/rqt_joint_trajectory_controller",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/rqt_joint_trajectory_controller/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/build/ros2_controllers_test_nodes",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/ros2_controllers_test_nodes/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/controller_manager/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/controller_manager_msgs/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_ws/install/my_robot_interfaces/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_ws/install/lifecycle_py/lib/python3.12/site-packages",
+        "/home/dimitris-gkagkanakis/ros2_ws/install/components_py/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

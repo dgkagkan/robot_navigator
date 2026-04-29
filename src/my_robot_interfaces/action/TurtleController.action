@@ -1,0 +1,12 @@
+#Goal
+float32 x
+float32 y
+float32 velocity
+bool use_nav2
+---
+#result
+string msg
+---
+#Feedback
+float32 x
+float32 y

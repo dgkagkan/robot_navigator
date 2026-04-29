@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="scan_radius" value="0.08" />
+    <xacro:property name="scan_height" value="0.03" />
+
+
+     <link name="scan_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${scan_radius}" length="${scan_height}" />
+            </geometry>
+            <origin xyz="0 0 ${scan_height/2}" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="${scan_radius}"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.1" r="${scan_radius}" length="${scan_height}"
+                                o_xyz="0 0 0" o_rpy="${pi/2.0} 0 0"/>
+    </link>
+
+</robot>
