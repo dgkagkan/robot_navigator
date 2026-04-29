@@ -90,6 +90,21 @@ robot_navigator/
 - Gazebo
 - `slam_toolbox`
 - `nav2_bringup`
+## ⚠️ Before Running
+
+Copy the required files to your home directory:
+
+```bash
+# Map files
+mkdir -p ~/maps
+cp src/maps/cubes.pgm ~/maps/
+cp src/maps/cubes.yaml ~/maps/
+
+# Nav2 params
+cp src/my_robot_bringup/config/nav2_params_custom.yaml ~/
+```
+
+> Note: Nav2 params are tuned for low-end hardware. Modify if needed.
 
 ### Build
 
