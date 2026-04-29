@@ -6,21 +6,9 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/dimitris-gkagkanakis/robotic_arm_ws/install/robotic_arm_interfaces/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/transmission_interface/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/ros2_control_test_assets/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/joint_trajectory_controller/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/joint_state_broadcaster/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/controller_manager/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/controller_interface/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/hardware_interface/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/joint_limits/include/**",
-        "/home/dimitris-gkagkanakis/ros2_controllers_ws/install/controller_manager_msgs/include/**",
-        "/home/dimitris-gkagkanakis/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
-        "/home/dimitris-gkagkanakis/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
-        "/home/dimitris-gkagkanakis/prototype_ws/install/my_robot_interfaces/include/**",
+        "${workspaceFolder}/install/my_robot_interfaces/include/**",
+        "${workspaceFolder}/src/robot_controller_cpp/include/**",
         "/opt/ros/jazzy/include/**",
-        "/home/dimitris-gkagkanakis/prototype_ws/src/robot_controller_cpp/include/**",
         "/usr/include/**"
       ],
       "name": "ros2",
