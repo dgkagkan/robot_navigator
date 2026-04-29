@@ -117,21 +117,14 @@ source install/setup.bash
 
 ### Run
 
-**1. Start simulation (Gazebo + RViz2)**
-```bash
-ros2 launch my_robot_bringup my_robot_gazebo.launch.xml
-```
-
-**2. Start navigation (SLAM + Nav2)**
-```bash
-ros2 launch my_robot_bringup navigation.launch.xml
-```
-
-**3. Or launch everything at once**
 ```bash
 ros2 launch my_robot_bringup bringup_all.launch.py
 ```
 
+This will automatically start:
+1. Gazebo + RViz2
+2. Navigation (SLAM + Nav2) — launches after Gazebo is ready
+3. Keyboard controller — opens in a new terminal when the map is loaded
 ---
 
 ## 🛠️ Tech Stack
