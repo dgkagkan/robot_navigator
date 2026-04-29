@@ -16,6 +16,7 @@ A ROS 2 Jazzy autonomous robot car with SLAM mapping, lifecycle-based action con
 - **SLAM Mapping** — Real-time environment mapping using LiDAR
 - **Lifecycle Action Controller** — C++ action server/client with full ROS 2 lifecycle management
 - **Obstacle-Aware Navigation** — Python API sends planned paths to avoid obstacles
+- **Dynamic Obstacle Avoidance** — Real-time map updates via Nav2 costmap
 - **Goal-based Keyboard Controller** — Each keypress sends an incremental navigation goal to the action server, leveraging the full nav stack for automatic obstacle avoidance
 - **Gazebo + RViz2** — Full simulation and visualization pipeline
 
@@ -144,7 +145,6 @@ This will automatically start:
 ## 🔭 Future Work
 
 - Integrate camera for visual object detection (YOLO)
-- Dynamic obstacle avoidance with real-time map updates
 - Web UI for remote control (Flask + WebSocket)
 - Deploy on physical hardware
 
