@@ -6,7 +6,7 @@ A ROS 2 Jazzy autonomous robot car with SLAM mapping, lifecycle-based action con
 
 ## 📽️ Demo
 
-> *Video demo coming soon — Gazebo simulation with SLAM mapping and autonomous navigation*
+> (https://youtu.be/KyvREW2cXuE)
 
 ---
 
