@@ -6,7 +6,7 @@ A ROS 2 Jazzy autonomous robot car with SLAM mapping, lifecycle-based action con
 
 ## 📽️ Demo
 
-> (https://youtu.be/KyvREW2cXuE)
+> [![Demo Video](https://img.youtube.com/vi/KyvREW2cXuE/0.jpg)](https://youtu.be/KyvREW2cXuE)
 
 ---
 
